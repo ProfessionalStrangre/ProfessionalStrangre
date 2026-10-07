@@ -1,16 +1,48 @@
-## Hi there 👋
 
-<!--
-**ProfessionalStrangre/ProfessionalStrangre** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Hi there, I'm Florian 👋
 
-Here are some ideas to get you started:
+```text
+  _   _ _____ _     _     ___   _ 
+ | | | | ____| |   | |   / _ \ | |
+ | |_| |  _| | |   | |  | | | || |
+ |  _  | |___| |___| |__| |_| ||_|
+ |_| |_|_____|_____|_____\___/ (_)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```
+
+🚀 **IT Systems Integration Specialist Trainee**
+
+I am currently undergoing retraining to become an IT Specialist for Systems Integration. My primary focus is on designing, administering, and securing modern IT infrastructure, networks, and server environments.
+
+---
+
+### 🛠️ Technologies & Tools
+
+**Operating Systems & Virtualization**
+
+
+
+
+
+**Networking, Security & Services**
+
+
+
+
+
+**Scripting & Automation**
+
+
+
+---
+
+### 📌 Current Focus & Learning Areas
+
+* 🌐 **Networking:** VLANs, routing, VPN tunneling (WireGuard), and firewall rulesets (OPNsense)
+* 🐧 **Linux Administration:** User & permission management, network configuration (`netplan`)
+* 🔒 **IT Security:** System hardening, access control models (DAC, MAC, RBAC), and network traffic analysis
+* 🐍 **Automation:** Python fundamentals and scripting for system administration tasks
+
+---
+
+### 📊 GitHub Stats
