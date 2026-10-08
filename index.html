@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florian Koritnik - Systems Integration Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                            950: '#052e16',
+                        },
+                        dark: {
+                            bg: '#0a0f1d',
+                            card: '#111827',
+                            border: '#1f2937'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0a0f1d;
+            color: #f3f4f6;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px -5px rgba(34, 197, 94, 0.15);
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 30px 0px rgba(34, 197, 94, 0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-brand-500 selection:text-black">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-dark-bg/80 border-b border-dark-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-wider text-white flex items-center gap-2">
+                <span class="text-brand-500">&lt;</span>FK<span class="text-brand-500">/&gt;</span>
+                <span class="text-sm font-normal text-gray-400 hidden sm:inline">| ProfessionalStrangre</span>
+            </a>
+            <div class="flex gap-6 text-sm font-medium text-gray-300">
+                <a href="#about" class="hover:text-brand-500 transition-colors">About</a>
+                <a href="#skills" class="hover:text-brand-500 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-brand-500 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-brand-500 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="flex-1 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-500 text-xs font-semibold tracking-wide uppercase">
+                    <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                    Systems Integration Trainee
+                </div>
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white">
+                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-emerald-300">Florian Koritnik</span>
+                </h1>
+                <p class="text-lg text-gray-300 leading-relaxed max-w-2xl">
+                    Aspiring IT Specialist for Systems Integration. My primary focus centers on networking, Linux systems, IT infrastructure, and system administration.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="https://github.com/ProfessionalStrangre" target="_blank" rel="noopener noreferrer" 
+                       class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-500 text-black font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 shadow-lg shadow-brand-600/20">
+                        <i class="fab font-lg fa-github"></i>
+                        GitHub Profile
+                    </a>
+                    <a href="#contact" 
+                       class="inline-flex items-center gap-2 bg-dark-card hover:bg-gray-800 text-gray-200 border border-dark-border px-5 py-2.5 rounded-lg transition-all duration-200">
+                        <i class="fas fa-envelope"></i>
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+            
+            <div class="w-48 h-48 sm:w-64 sm:h-64 relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-brand-500 to-emerald-600 rounded-full blur opacity-40 group-hover:opacity-75 transition duration-300"></div>
+                <img src="https://avatars.githubusercontent.com/u/308847244?v=4" 
+                     alt="Florian Koritnik" 
+                     class="relative w-full h-full rounded-full object-cover border-2 border-dark-border shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-dark-card/50 border-y border-dark-border px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center space-y-2 mb-12">
+                <h2 class="text-3xl font-bold text-white">Technical Skills & Competencies</h2>
+                <p class="text-gray-400 text-sm">Core areas of focus in IT systems integration and administration</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Skill Card: Networking & Firewalls -->
+                <div class="bg-dark-card border border-dark-border p-6 rounded-xl glow-effect transition-all duration-300">
+                    <div class="w-12 h-12 bg-brand-500/10 rounded-lg flex items-center justify-center text-brand-500 mb-4 text-xl">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Networking & Security</h3>
+                    <p class="text-gray-400 text-sm mb-4">OPNsense firewall configurations, routing, WireGuard VPN setups, static IP mapping, and Wireshark packet analysis.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">OPNsense</span>
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">WireGuard</span>
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">Wireshark</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card: Virtualization & Linux -->
+                <div class="bg-dark-card border border-dark-border p-6 rounded-xl glow-effect transition-all duration-300">
+                    <div class="w-12 h-12 bg-brand-500/10 rounded-lg flex items-center justify-center text-brand-500 mb-4 text-xl">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Linux & Virtualization</h3>
+                    <p class="text-gray-400 text-sm mb-4">Ubuntu Server configuration via Netplan, VirtualBox environment orchestration, and virtual machine inter-networking.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">Ubuntu Server</span>
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">VirtualBox</span>
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">Netplan</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card: Project Management Fundamentals -->
+                <div class="bg-dark-card border border-dark-border p-6 rounded-xl glow-effect transition-all duration-300">
+                    <div class="w-12 h-12 bg-brand-500/10 rounded-lg flex items-center justify-center text-brand-500 mb-4 text-xl">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Project Management</h3>
+                    <p class="text-gray-400 text-sm mb-4">Fundamentals in project planning, network diagrams, milestone scheduling, technical documentation, and workflow analysis.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">Project Planning</span>
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">Network Diagrams</span>
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">Documentation</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card: Python -->
+                <div class="bg-dark-card border border-dark-border p-6 rounded-xl glow-effect transition-all duration-300">
+                    <div class="w-12 h-12 bg-brand-500/10 rounded-lg flex items-center justify-center text-brand-500 mb-4 text-xl">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Python Scripting</h3>
+                    <p class="text-gray-400 text-sm mb-4">Algorithm design, basic task automation, data processing, and scripting for system administrative needs.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">Python 3</span>
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">Automation</span>
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">Algorithms</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card: HTML Fundamentals -->
+                <div class="bg-dark-card border border-dark-border p-6 rounded-xl glow-effect transition-all duration-300">
+                    <div class="w-12 h-12 bg-brand-500/10 rounded-lg flex items-center justify-center text-brand-500 mb-4 text-xl">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">HTML Fundamentals</h3>
+                    <p class="text-gray-400 text-sm mb-4">Structuring semantic web pages, accessibility basics, and clean document markup for web interfaces.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">HTML5</span>
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">Semantic Structure</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card: PHP Fundamentals -->
+                <div class="bg-dark-card border border-dark-border p-6 rounded-xl glow-effect transition-all duration-300">
+                    <div class="w-12 h-12 bg-brand-500/10 rounded-lg flex items-center justify-center text-brand-500 mb-4 text-xl">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">PHP Fundamentals</h3>
+                    <p class="text-gray-400 text-sm mb-4">Basic server-side scripting, processing form submissions, and integration with local backend services.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">PHP</span>
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">Server-Side</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card: SQL Fundamentals -->
+                <div class="bg-dark-card border border-dark-border p-6 rounded-xl glow-effect transition-all duration-300 lg:col-span-1">
+                    <div class="w-12 h-12 bg-brand-500/10 rounded-lg flex items-center justify-center text-brand-500 mb-4 text-xl">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">SQL Fundamentals</h3>
+                    <p class="text-gray-400 text-sm mb-4">Data Definition Language (DDL) commands, creating table structures, basic relational queries, and data management.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">SQL</span>
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">MariaDB / MySQL</span>
+                        <span class="px-2.5 py-1 bg-dark-bg text-gray-300 text-xs rounded-md border border-dark-border">DDL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full">
+        <div class="text-center space-y-2 mb-12">
+            <h2 class="text-3xl font-bold text-white">Highlighted Projects</h2>
+            <p class="text-gray-400 text-sm">Practical labs and development work</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project 1: Lab Network & Security Setup -->
+            <div class="bg-dark-card border border-dark-border rounded-xl p-6 flex flex-col justify-between hover:border-brand-500/50 transition-colors">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-semibold px-2.5 py-1 bg-brand-500/10 text-brand-500 border border-brand-500/20 rounded">Lab & Systems</span>
+                        <i class="fas fa-server text-gray-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Virtual Network & VPN Infrastructure</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Designed and deployed a multi-VM lab environment using VirtualBox, featuring an OPNsense firewall, an Ubuntu Server configured via Netplan, and a secure WireGuard VPN tunnel with full Wireshark traffic inspection.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-dark-border">
+                    <span class="text-xs text-gray-400 bg-dark-bg px-2 py-1 rounded">OPNsense</span>
+                    <span class="text-xs text-gray-400 bg-dark-bg px-2 py-1 rounded">WireGuard</span>
+                    <span class="text-xs text-gray-400 bg-dark-bg px-2 py-1 rounded">Ubuntu Server</span>
+                </div>
+            </div>
+
+            <!-- Project 2: Python Counter Application -->
+            <div class="bg-dark-card border border-dark-border rounded-xl p-6 flex flex-col justify-between hover:border-brand-500/50 transition-colors">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-semibold px-2.5 py-1 bg-brand-500/10 text-brand-500 border border-brand-500/20 rounded">Python</span>
+                        <i class="fab fa-python text-gray-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Customizable Counter Application</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Developed a mobile-friendly utility application in Python allowing users to manage multiple named counters with custom state persistence and tracking functionality.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-dark-border">
+                    <span class="text-xs text-gray-400 bg-dark-bg px-2 py-1 rounded">Python</span>
+                    <span class="text-xs text-gray-400 bg-dark-bg px-2 py-1 rounded">Application Design</span>
+                    <span class="text-xs text-gray-400 bg-dark-bg px-2 py-1 rounded">Automation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-dark-card/50 border-t border-dark-border px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <h2 class="text-3xl font-bold text-white">Let's Connect</h2>
+            <p class="text-gray-400 max-w-lg mx-auto">
+                Interested in collaboration or learning more about my systems integration projects? Feel free to reach out or connect via GitHub.
+            </p>
+            <div class="flex justify-center gap-6 pt-4">
+                <a href="https://github.com/ProfessionalStrangre" target="_blank" rel="noopener noreferrer" 
+                   class="w-12 h-12 rounded-full bg-dark-card border border-dark-border flex items-center justify-center text-gray-300 hover:text-brand-500 hover:border-brand-500 transition-colors text-xl">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.reddit.com/user/ProfessionalStrangre/" target="_blank" rel="noopener noreferrer" 
+                   class="w-12 h-12 rounded-full bg-dark-card border border-dark-border flex items-center justify-center text-gray-300 hover:text-brand-500 hover:border-brand-500 transition-colors text-xl">
+                    <i class="fab fa-reddit-alien"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 border-t border-dark-border text-center text-xs text-gray-500">
+        <p>© 2026 Florian Koritnik (ProfessionalStrangre). Built with Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
